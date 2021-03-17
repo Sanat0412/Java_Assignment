@@ -13,6 +13,7 @@ public class GroceryProduct {
     public String name;
     public int price;
     public int quantity;
+    ArrayList<GroceryProduct>  groceryList;
 
     public GroceryProduct(String name, int price, int quantity) {
         this.name = name;
@@ -22,7 +23,6 @@ public class GroceryProduct {
     }
 
     public void addItemInlist(String name, int price, int quantity) {
-        ArrayList  groceryList= new ArrayList();
         for (Object o : groceryList) {
             if(((GroceryProduct) o).name.equalsIgnoreCase(name)){
                 ((GroceryProduct) o).price=((GroceryProduct) o).price+price;
@@ -30,6 +30,16 @@ public class GroceryProduct {
             }
             else{
                 groceryList.add(new GroceryProduct(name,price,quantity));
+            }
+        }
+    }
+
+    public void print(){
+        if(!groceryList.isEmpty()){
+            for (GroceryProduct groceryProduct : groceryList) {
+                System.out.println("Name "+groceryProduct.name);
+                System.out.println("Price "+groceryProduct.price);
+                System.out.println("Quantity "+groceryProduct.quantity);
             }
         }
     }
