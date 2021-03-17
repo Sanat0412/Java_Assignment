@@ -14,6 +14,7 @@ public class PatternPrinting1 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number of lines :- ");
         int numberOfLines= sc.nextInt();
+        sc.close();
         printPattern(numberOfLines);
     }
     private static void printPattern(int numberOfLines) {

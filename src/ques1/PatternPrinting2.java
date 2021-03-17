@@ -13,6 +13,7 @@ public class PatternPrinting2 {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         int numberOfLines= sc.nextInt();
+        sc.close();
         printPattern(numberOfLines);
     }
 
