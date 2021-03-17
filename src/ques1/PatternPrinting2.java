@@ -29,6 +29,5 @@ public class PatternPrinting2 {
             System.out.println();
         }
     }
-
 }
 
