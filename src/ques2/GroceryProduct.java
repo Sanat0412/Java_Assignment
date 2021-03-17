@@ -17,6 +17,5 @@ public class GroceryProduct {
         this.price = price;
         this.quantity = quantity;
     }
-
 }
 

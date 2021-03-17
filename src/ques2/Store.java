@@ -30,7 +30,6 @@ public class Store {
             groceryList.add(new GroceryProduct(name,price,quantity));
         }
     }
-
     public void print(){
         if(!groceryList.isEmpty()){
             System.out.printf("%-15s %-15s %-15s\n","Product Name","Qunatity","Price");
